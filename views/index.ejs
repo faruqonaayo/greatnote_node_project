@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreatNotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+
+<body>
+    <nav class="gn-navbar">
+        <div class="logo">
+            <h1>GreatNotes</h1>
+        </div>
+        <div class="gn-navmenu">
+            <ul class="gn-navoptions">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/allBooks">Books</a></li>
+                <li><a href="/signout">Sign Out</a></li>
+            </ul>
+        </div>
+        <div class="toggle-btn">
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+        </div>
+    </nav>
+    <section id="welcome">
+        <div class="container">
+                    <h1>WELCOME TO GREATNOTES WEBSITE</h1>
+        <div class="write-btn">
+            <img src="/icons/pen.png" alt="" width="30px" height="30px">
+            <p>Write your note</p>
+        </div>
+        </div>
+
+    </section>
+    <section id="gb-form">
+        <h3>Write the best notes 📝</h3>
+        <form class="book-form">
+            <label for="book-title">Book Title:</label>
+            <input type="text" name="book-title" class="title" id="" required>
+            <label for="book-isbn">Book ISBN-13:</label>
+            <input type="number" name="book-isbn" class="isbn" id="" required>
+            <label for="book-rating">Book Rating:</label>
+            <input type="number" name="book-rating" class="rating" id="" required>
+            <label for="book-note">Book Note:</label>
+            <textarea name="book-note" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Post Note</button>
+        </form>
+    </section>
+    <footer>
+        <h4>Developed by Faruq Ayomide</h4>
+    </footer>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/home.js"></script>
+</body>
+
+</html>

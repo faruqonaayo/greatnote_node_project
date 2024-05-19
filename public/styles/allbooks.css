@@ -1,0 +1,220 @@
+body #all-books{
+    padding: 10px 30px;
+}
+
+
+body #all-books .filter-options{
+    margin-bottom: 20px;
+    position: fixed;
+}
+
+body #all-books .filter-options form select{
+    width: 150px;
+    height: 23px;
+}
+
+body #all-books .all-books-container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+body #all-books .all-books-container .book-item{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    transition: all 0.5s ease-in-out;
+}
+
+body #all-books .all-books-container .book-item:hover{
+    background-color: #daf5f6;
+}
+
+body #all-books .all-books-container .book-item img{
+    width: 60px;
+}
+
+
+body #all-books .all-books-container .book-item .book-info{
+    text-align: left;
+    height: 150px;
+}
+body #all-books .all-books-container .book-item .book-info h3{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #284B63;
+}
+
+body #all-books .all-books-container .book-item .book-info h3 span{
+    font-weight: 400;
+    color: #3C6E71;
+}
+
+body #all-books .all-books-container .book-item .book-info h4{
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #284B63;
+}
+
+body #all-books .all-books-container .book-item .book-info h4 span{
+    font-weight: 400;
+    color: #3C6E71;
+}
+
+body #all-books .all-books-container .user-action{
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body #all-books .all-books-container .user-action button{
+    width: 75px;
+    border: none;
+    cursor: pointer;
+    padding: 4px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+body #all-books .all-books-container .user-action .view-btn{
+    background-color: #3C6E71;
+}
+
+body #all-books .all-books-container .user-action .view-btn:hover{
+    background-color: #353535;
+}
+
+body #all-books .all-books-container .user-action .edit-btn{
+    background-color: #284B63;
+}
+
+body #all-books .all-books-container .user-action .edit-btn:hover{
+    background-color: #353535;
+}
+
+body #all-books .all-books-container .user-action .delete-btn{
+    background-color: red;
+}
+
+body #all-books .all-books-container .user-action .delete-btn:hover{
+    background-color: #353535;
+}
+
+body #all-books .all-books-container .user-action .back-btn{
+    background-color: #353535;
+}
+
+body #all-books .all-books-container .user-action .back-btn:hover{
+    background-color: #3C6E71;
+}
+
+.book-note{
+    position: absolute;
+    top: -100%;
+    background-color: #FFFFFF;
+    width: 90%;
+    padding: 10px;
+    border-radius: 7px;
+    transition: all 0.5s ease;
+}
+
+.book-note.active{
+    top: 150px;
+}
+
+
+body #all-books .all-books-container .edit-book-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+body #all-books .all-books-container .edit-book-form.active{
+    left: 0;
+}
+
+body #all-books .all-books-container .edit-book-form form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 60%;
+}
+
+body #all-books .all-books-container .edit-book-form form label{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+body #all-books .all-books-container .edit-book-form form input, body #all-books .all-books-container .edit-book-form form textarea{
+    margin-bottom: 10px;
+    padding: 2px 5px;
+}
+
+body #all-books .all-books-container .edit-book-form .make-edit-btn{
+    width: 75px;
+    border: none;
+    cursor: pointer;
+    padding: 4px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #284B63;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+body #all-books .all-books-container .edit-book-form .make-edit-btn:hover{
+    background-color: #3C6E71;
+}
+
+body #all-books .all-books-container .edit-book-form .back-btn{
+    width: 100px;
+    padding: 4px 10px;
+    background-color: #353535;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+body #all-books .all-books-container .edit-book-form .back-btn:hover{
+    background-color: #3C6E71;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (min-width: 800px) {
+    body #all-books .all-books-container{
+        /* justify-content: space-around; */
+        justify-content: left;
+    }
+
+    body #all-books .all-books-container .book-item{
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
